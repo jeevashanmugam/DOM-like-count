@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<style>
+    #picture {
+        width: 350px;
+        height: 190px;
+    }
+
+    .icon i {
+        font-size: 32px;
+        color: red;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="img">
+            <img id="picture"
+                src="https://e1.pxfuel.com/desktop-wallpaper/192/836/desktop-wallpaper-5-john-wick-and-backgrounds-john-wick-chapter-4-poster.jpg"
+                alt="">
+        </div>
+
+        <div class="icon">
+            <i id="like" class="bi bi-heart-fill"></i>
+            <span id="likeCount">2</span>
+            <span>like's</span>
+        </div>
+    </div>
+
+    <script>
+
+        //let picture =document.getElementById("picture")
+        let likeIcon = document.getElementById("like")
+        let likeCount = document.getElementById("likeCount")
+
+
+        let count = 2
+        likeIcon.addEventListener("click", funName)
+        function funName() {
+            count++
+            likeCount.innerText = count;
+            //picture.innerText = count;
+
+            //console.log(count);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
